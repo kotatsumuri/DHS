@@ -1,0 +1,87 @@
+body {
+  font-family:"メイリオ";
+	height:60vh;
+	width:100vw;
+	text-align: center;
+  background-image:linear-gradient(#BFFFFF , #FFFFFF);
+
+}
+body {
+    animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+		margin: 40vh auto 0;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+.num{
+	/*text-align:center;*/
+	/*margin-top:30vh;*/
+	font-size:60px;
+	color:#3F3F3F;
+}
+.title{
+  text-align:center;
+  font-size:30px;
+  color:#3F3F3F;
+}
+.btn{
+  margin-bottom:max;
+}
+.file-bt {
+	font-weight:bold;
+	font-size:15px;
+	position: relative;
+	display: inline-block;
+	width: 160px;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #FFF;
+	background: #26C6DA;
+	border-bottom: 2px solid #00838F;
+	border-radius: 4px;
+	box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+}
+.file-bt:hover {
+border-bottom: 2px solid #26C6DA;
+box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+.file-bt input {
+    display: none;
+}
+
+
+.save{
+	font-weight:bold;
+	font-size:15px;
+	position: relative;
+	display: inline-block;
+	/*width: 60px;*/
+	padding: 0.99em;
+	text-align: center;
+	text-decoration: none;
+	color: #FFF;
+	background: #26A6DA;
+	border-bottom: 2px solid #00838F;
+	border-radius: 4px;
+	box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+	border-left: none;
+	border-right:none;
+	border-top:none;
+	margin-left: 10%;
+}
+.save:hover {
+border-bottom: 2px solid #26A6DA;
+box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+.save input {
+    display: none;
+}

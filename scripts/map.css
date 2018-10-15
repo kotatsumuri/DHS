@@ -1,0 +1,27 @@
+body {
+  font-family:"メイリオ";
+	height:85vh;
+	width:100vw;
+  background-image:linear-gradient(#BFFFFF , #FFFFFF);
+}
+body {
+    animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 4s ease 0s 1 normal;
+}
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+.title{
+  text-align:center;
+  font-size:40px;
+  margin-top:15vh;
+  margin-bottom:10vh;
+}
+#map{
+  margin:auto;
+}

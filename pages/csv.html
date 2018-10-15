@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<title>DHS</title>
+<link rel="stylesheet" type="text/css" href="./stylesheets/csv.css">
+</head>
+<body>
+  <div class="num">2</div>
+  <div class="title">ドローンの飛行ログが記録された</br>CSVファイルを選択してください</div>
+<form action="uploadcsv.php" method="post" enctype="multipart/form-data">
+  <p>
+    <div class="btn" style="display:inline-flex">
+    <div class="file-btn">
+      <label for="upfile" class="file-bt">
+        SELECT
+        <input type="file" name="upfile" id="upfile" accept="text/csv"  />
+      </label>
+      </div>
+  </p>
+  <p>
+    <div class="save-btn">
+        <input class="save" id="save" type="submit" name="save" value="UPLOAD"　style="font-weight:bold;" />
+    </div>
+  </div>
+  </p>
+</form>
+
+<script>
+$('#upfile').change(function(){
+  if (this.files.length > 0) {
+    // 選択されたファイル情報を取得
+    var file = this.files[0];
+
+    // readerのresultプロパティに、データURLとしてエンコードされたファイルデータを格納
+    var reader = new FileReader();
+    reader.readAsDataURL(file);
+  }
+});
+</script>
+</body>
+</html>

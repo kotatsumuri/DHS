@@ -1,0 +1,6 @@
+./upload
+./samples
+*.DS_Store
+./scripts/output
+./pages/output.zip
+./scripts/modules/__pycache__
